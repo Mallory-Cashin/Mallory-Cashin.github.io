@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>menu.html</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("imgs/get-20-towards-lunch-at-city-sports-grille-at-spare-time-in-4740192-regular.jpg");
+    min-height: 75%;
+  }
+  .menu {
+    display: none;
+  }
+
+  body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Concert+One", sans-serif
+  }
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+  /*Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #222;
+  }
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px
+  }
+  Remove margins from "page content" on small screens 
+  @media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+  }
+</style>
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img alt= "logo" src="imgs/Spare-Time-logo.jpg" style="width:100%">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-camera-retro w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+    <a href="menu.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-cutlery w3-xxlarge"></i>
+      <p>MENU</p>
+    </a>
+     <a href="parties.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-birthday-cake w3-xxlarge"></i>
+      <p>PARTIES</p>
+    </a>
+    <a href="events.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-child w3-xxlarge"></i>
+      <p>EVENTS</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:10%">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:10%">ABOUT</a>
+      <a href="photos.html" class="w3-bar-item w3-button" style="width:10%">PHOTOS</a>
+      <a href="index.html" class="w3-bar-item w3-button" style="width:10%">CONTACT</a>
+      <a href="menu.html" class="w3-bar-item w3-button" style="width:10%">MENU</a>
+      <a href="menu.html" class="w3-bar-item w3-button" style="width:10%">PARTIES</a>
+      <a href="events.html" class="w3-bar-item w3-button" style="width:10%">EVENTS</a>
+    </div>
+  </div>
+
+  <div class="w3-center category">
+    <img src="imgs/get-20-towards-lunch-at-city-sports-grille-at-spare-time-in-4740192-regular.jpg" alt="#"/>
+  </div>
+  <div  class="category2 w3-center">
+    <img src="imgs/images-4.jpg" alt="#"/>
+  </div>
+  <div class="category3 w3-center">
+    <img src="imgs/images-1.jpg" alt="#"/>
+
+  </div>
+
+  <div class="w3-content" style="max-width:700px">
+
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="what">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+        <div class="w3-row w3-center w3-card-2 w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'FOOD');" id="myLink">
+            <div class="w3-col w3-third w3-red tablink">Eat</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'SODA');">
+            <div class="w3-col w3-third w3-yellow tablink">Drink</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'DRINKS');">
+            <div class="w3-col w3-third w3-blue tablink">Others</div>
+          </a>
+        </div>
+
+        <div id="FOOD" class="w3-container menu w3-padding-48 w3-card-2">
+          <b>APPS</b>
+          <h5>SOUTHWEST EGG ROLLS</h5>
+          <p class="w3-text-grey">Flour tortillas filled with shredded chicken, black beans, corn, jack
+            cheese, spinach & red peppers. Served with creamy avocado sauce. 10</p><br>
+
+            <h5>QUESADILLA</h5>
+            <p class="w3-text-grey"></p>A tortilla filled with cheddar jack cheese, diced bell peppers & onions.
+            Choose roasted hand-pulled chicken or shredded steak.
+            Served with sides of salsa & sour cream. 10<br>
+
+            <h5>BEEF SLIDERS</h5>
+            <p class="w3-text-grey"></p>A duo of tasty mini beef burgers,* topped with cheddar cheese, bacon,
+            fresh greens & Sriracha aioli. Served with hand cut fries. 8<br>
+
+            <h5>FULLY LOADED FRIES</h5>
+            <p class="w3-text-grey"></p>Fresh hand-cut fries topped with cheddar jack cheese, bacon pieces,
+            tomatoes & jalapeños. This delicious assortment is baked,
+            topped with scallions, and served with chipotle ranch. 7<br>
+
+            <h5>FRIED PICKLES</h5>
+            <p class="w3-text-grey"></p>Slices of hearty dill pickles, battered & fried.
+            Served with Sriracha aioli. 6<br>
+
+            <img src="imgs/pickles2.png" alt="#"/>
+
+            <h5>NACHO SUPREME</h5>
+            <p class="w3-text-grey"></p>Crisp corn tortilla chips loaded up with our homemade queso,
+            tomatoes, jalapeños, black olives & cheddar jack cheese. Lightly
+            baked, then finished with scallions and sides of sour cream & salsa.
+            <P>Add Taco Beef* 3</P>
+            <P>Add Chicken 3</P>
+            <P>Add Guacamole 1</P> <P>7</P><br>
+
+            <img src="imgs/nacho2.jpg" alt="#"/>
+
+            <h5>MOZZARELLA STICKS</h5>
+            <p class="w3-text-grey"></p>Golden fried, battered mozzarella cheese sticks.
+            Presented with a side of slow simmered marinara sauce. 6<br>
+
+            <h5>SPARE TIME FRIES OR TOTS</h5>
+            <p class="w3-text-grey"></p>Try our delicious & fresh hand cut fries, lightly salted,
+            or the classic favorite potato puffs.
+            Enjoy them plain or spice ‘em up with ranch seasoning,
+            salt & vinegar, or cajun seasoning. 4<br>
+
+            <img src="imgs/tots2.jpg" alt="#"/>
+
+            <h5>CURLEY FRIES</h5>
+            <p class="w3-text-grey"></p>Spiral cuts of potatoes, golden fried and served with chipotle ranch. 5<br>
+
+            <h5>BEER BATTERED ONION RINGS</h5>
+            <p class="w3-text-grey"></p> Crispy, thick-cut & beer battered rings.
+            Presented with a spicy sriracha aioli. 5<br>
+
+            <b>SANDWICHES</b>
+            <h5>SPARE TIME SIGNATURE BURGER</h5>
+            <p class="w3-text-grey">A soft roll holds our 8 oz. fresh ground burger*, grilled to perfection
+              & topped with our chipotle BBQ sauce, cheddar, hickory smoked
+              bacon, fried pickles, lettuce, sliced tomatoes & sliced red onions. 12</P><br>
+
+                <img src="imgs/burger2.jpg" alt="#"/>
+
+              <h5>CITY SPORTS CHICKEN SANDWICH</h5>
+              <p class="w3-text-grey">Tucked inside our fresh roll is a 6 oz. chicken breast, drenched
+                in tangy teriyaki sauce & topped with Swiss cheese, hickory smoked
+                bacon, lettuce, sliced tomatoes & sliced red onions. 11</P><br>
+
+                <h5>CLASSIC BURGER</h5>
+                <p class="w3-text-grey">A fresh ground beef burger* on a fresh roll with lettuce,
+                  sliced tomatoes & red onions.
+                  Try our NEW vegetarian black bean burger! 10</P><br>
+
+                  <h5>CRANBERRY HONEY MUSTARD WRAP</h5>
+                  <p class="w3-text-grey">Sliced turkey, bacon, fresh greens, tomatoes, and a signature
+                    sauce make this a real treat! 9</P><br>
+
+                    <h5>BUFFALO CHICKEN WRAP</h5>
+                    <p class="w3-text-grey">We fill a large flour tortilla with tender cuts of buffalo style chicken,
+                      lettuce, tomato, red onion, ranch dressing & cheddar jack cheese. 9</P><br>
+
+                      <h5>CLASSIC TURKEY CLUB</h5>
+                      <p class="w3-text-grey">A triple decker sandwich with turkey, bacon, lettuce,
+                        tomato & mayo. 8</P><br>
+
+                        <h5>PHILLY STEAK</h5>
+                        <p class="w3-text-grey">Shaved steak* sautéed with onions & bell peppers, topped with
+                          queso cheese sauce in a soft roll. 9</p><br>
+
+                          <img src="imgs/philly2.jpg" alt="#">
+
+                          <h5>SPARE TIME ALL-BEEF DOG</h5>
+                          <p class="w3-text-grey">A jumbo all-beef frank topped just the way you want it.
+                            Ask about available toppings! 6</p><br>
+
+                            <h5>BLT SANDWHICH</h5>
+                            <p class="w3-text-grey">A classic toasted sandwich with bacon, lettuce, tomato & mayo. 6</p><br>
+
+                            <h5>CHICKEN TENDERS</h5>
+                            <p class="w3-text-grey">A quartet of tender chicken strips, fried golden brown. Served
+                              with sweet & sour sauce & Spare Time Fries. 8</p><br>
+                              <img src="imgs/wings2.jpg" alt="#">
+
+                              <h5>UPGRADE YOUR FRIES</h5>
+                              <p class="w3-text-grey">Substitute any one of the following for your Spare Time Fries.
+                                Onion Rings, Curly Fries, or Tots. 2</P><br>
+
+
+                                <b>PIZZA</b>
+                                <img src="imgs/pizza2.jpg" alt="#">
+
+                                <h5>CHEESE & MARINARA </h5>
+                                <p class="w3-text-grey">Fresh & hot, topped with slow simmered marinara sauce &
+                                  covered with an Italian five cheese blend.</P>
+                                  <P>Toppings 16”- $2 Flatbread- $1</P>
+                                  <P>Pepperoni Onions Peppers Sausage Bacon Mushrooms
+                                    Olives     16"-13    Flatbread-6</p><br>
+
+                                    <h5>BUFFALO CHICKEN</h5>
+                                    <p class="w3-text-grey">Marinated chicken breast, sliced & coated in buffalo sauce. Topped
+                                      with mozzarella cheese, blue cheese crumbles & finished with a
+                                      ranch dressing drizzle. 16"-18    Flatbread-9</p><br>
+
+                                      <h5>BBQ CHICKEN</h5>
+                                      <p class="w3-text-grey">Tender cuts of chicken breast tossed in our signature BBQ sauce,
+                                        then topped with diced red onion & melted mozzarella cheese. 16"-18    Flatbread-9</p><br>
+
+                                        <h5>SUPREME</h5>
+                                        <p class="w3-text-grey"> Enjoy our combo of toppings; marinara, mozzarella, pepperoni,
+                                          sausage, onions, bell peppers & mushrooms.  16"-18    Flatbread-9</P><br>
+
+                                          <b>KIDS</b>
+                                          <h5>CHICKEN TENDERS</h5>
+                                          <p class="w3-text-grey">5</p><br>
+
+                                          <h5>CHEESE QUESADILLA</h5>
+                                          <p class="w3-text-grey">5</p><br>
+
+                                          <h5>CHEESEBURGER</h5>
+                                          <p class="w3-text-grey">5</p><br>
+
+                                          <h5>MAC & CHEESE</h5>
+                                          <p class="w3-text-grey">5</p><br>
+
+
+                                          <b>DESSERT</b>
+                                          <h5>BROWNIE SUNDAE</h5>
+                                          <p class="w3-text-grey">A rich chocolate brownie, heated and served with vanilla ice cream,
+                                            topped with chocolate syrup and whipped cream. 5</p><br>
+
+                                            <h5>MOLTEN CHOCOLATE CAKE</h5>
+                                            <p class="w3-text-grey">Moist dark chocolate cake filled with dark truffle that melts out.
+                                              Served with vanilla ice cream and whipped topping. 7</p><br>
+                                              <img src="imgs/Chocolate-Lava-Cake2.jpg" alt="#"/>
+                                            </div>
+
+                                            <div id="SODA" class="w3-container menu w3-padding-48 w3-card-2">
+                                              <h5>PEPSI PRODUCTS</h5>
+                                              <img src="imgs/Logo-Pepsi.jpg" alt="#"/>
+                                              <p class="w3-text-grey"></p>Pepsi, Diet Pepsi, Root Beer, Mountain Dew, Lemonade, Brisk Iced Tea, Orange Soda, and Sierra Mist. SM 1.64 LG 2.45 PITCHER 4.91<br>
+                                            </div>
+
+                                            <div id="DRINKS" class="w3-container menu w3-padding-48 w3-card-2">
+
+                                              <h5>OUR BARTENDERS CAN MAKE ANY ALCOHOLIC BEVERAGE UPON YOUR REQUST (21+ ONLY)</h5>
+                                              <p class="w3-text-grey"></p>(PRICES MAY VARY)
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+
+
+                                      <script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+ }
+ document.getElementById(menuName).style.display = "block";
+ evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>
