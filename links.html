@@ -11,10 +11,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+#myDIV {
+    width: 300px;
+    height: 300px;
+    background: lightblue url('') no-repeat;
+    color: white;
+    overflow: auto;
+}
   body, html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
+    background-image: url("wood.jpg");
+    background-color: #cccccc;
   }
+
   .menu {
     display: none;
   }
@@ -39,7 +50,7 @@
     #main {margin-left: 0}
   }
 </style>
-<body class="w3-black">
+<body class="w3-light-blue">
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -73,8 +84,8 @@
       <i class="fa fa-child w3-xxlarge"></i>
       <p>EVENTS</p>
     </a>
-     <a href="links.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-plus-square "></i>
+    <a href="links.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-plus-square w3-xxlarge"></i>
       <p>OTHER</p>
     </a>
   </nav>
@@ -90,68 +101,55 @@
       <a href="menu.html" class="w3-bar-item w3-button" style="width:10%">PARTIES</a>
       <a href="events.html" class="w3-bar-item w3-button" style="width:10%">EVENTS</a>
       <a href="links.html" class="w3-bar-item w3-button" style="width:10%">OTHER</a>
-
     </div>
   </div>
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-red" id="home">
-    <h1 class="w3-xxxlarge">Want Us To Host Your Party?</h1>
-    
-  </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-blue w3-padding-64" id="parties">
-    <h2 class="w3-text-yellow">GROUP EVENTS AT SPARE TIME ENTERTAINMENT!</h2>
 
-    <p>Custom Pricing and Packages for Corporate Events and Team Building are just a phone call away… Our group sales specialist can help you plan and organize your company outing of any size or style.  From non-traditional offsite meetings to Company Holiday Parties. 
-    </p>
+<head>
+  <style>
+    h1 {
+      color:green;
+      animation-duration: 10s;
+      animation-name: myslidein;
+      animation-iteration-count: 100;
+    }
 
-    <div class="w3-content w3-justify w3-text-blue w3-padding-64" id="parties">
-<h2 class="w3-text-yellow">KIDS BIRTHDAY PARTIES!</h2>
-<p>
-We make coming up with fun ideas for kids birthday parties easy! At Spare Time Manchester, whether you are planning a girl’s birthday or a boy’s birthday… we have parties...
-</p>
-<a href="imgs/birthday.pdf"> Open PDF Document </a>
+    @keyframes myslidein {
+      from {
+        margin-left: 100%;
+        width: 100%;
+      }
 
-<h2 class="w3-text-yellow">INVITATIONS</h2>
-Download our easy printable birthday invitations for your child's party here at Spare Time!
+      to {
+        margin-left: 0%;
+        font size:6em;
+        color:purple;
+      }
+    }
+  </style>
+</head>
 
-<a href="Manchester_bowling_birthday_4_page.pdf"> Open PDF Document </a>
+<body>
+  <h1>Click A Link!!!</h1>
+</body>
 
-<h2 class="w3-text-yellow">BIRTHDAYS FOR TWEENS AND TEENS</h2>
-<p>
-Let’s Get the Party Started!  A bowling birthday party is a totally cool event for the “in between years.”  We turn off the lights and turn up the Fun!  Enjoy the glow-in-the-dark atmosphere, music and friendly competition between friends!  Take a shot at adding Laser Tag to your party too!  Call or email us today and book the party ever!
-</p>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Manchester NH</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +603 15151588</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-  <!-- End Contact Section -->
-  </div>
 
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
-</body>
-</html>
+    <footer class="w3-content w3-padding-64 w3-text-purple w3-center w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <p class="w3-medium">Find Us On <a href="https://www.facebook.com/sparetimemanchester/" target="_blank" class="w3-hover-text-green">Facebook!</a></p>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <p class="w3-medium">Find Us On <a href="https://www.instagram.com/explore/locations/948905034/" target="_blank" class="w3-hover-text-green">Instagram!</a></p> 
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <p class="w3-medium">Find Us On <a href="https://www.pinterest.com/owatonnabowling/bowling-fun-at-spare-time-entertainment/" target="_blank" class="w3-hover-text-green">Pinterest!</a></p> 
+     
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <p class="w3-medium">Find Us On <a href="https://twitter.com/SpareTimeMI" target="_blank" class="w3-hover-text-green">Twitter!</a></p> 
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Find Us On <a href="https://www.linkedin.com/company/bowl-new-england" target="_blank" class="w3-hover-text-green">Linkedin!</a></p>
+      <p class="w3-medium">Need some bowling tips?<a href="" target="_blank" class="w3-hover-text-green">Techniques</a></p>
+      
+      <!-- End footer -->
+    </footer>
